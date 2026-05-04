@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-
+params.sleep = 1200
 process sleep {
     input:
     val time
@@ -12,5 +12,5 @@ process sleep {
 }
 
 workflow {
-    sleep( "1200" )
+    sleep( params.sleep )
 }
